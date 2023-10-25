@@ -6,16 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Escrito JS</title>
   <link rel="stylesheet" href="../css/estilosTareas.css">
-  <link rel="stylesheet" href="../css/estilosJS.css" />
+  <link rel="stylesheet" href="../css/estilosJS.css">
 </head>
 
 <body background="../images/bg.png">
   <header>
-    <a href="../index.html"><button type="button"
-      class="btnVolver">Volver</button></a>
+    <a href="../index.html"><button type="button" class="btnVolver">Volver</button></a>
   </header>
   <main>
     <div class="mainWrap">
+      <!-- Calculo de velocidad -->
       <div class="calculo">
         <h2>
           Calcular la velocidad de un auto. Teniendo en cuenta distancia y
@@ -30,6 +30,20 @@
               placeholder="Ingrese el tiempo (Minutos)" />
             <label for="velocidad">Velocidad: <span id="velocidad">0,0 m/min</span></label>
             <button type="button" id="calcular">Calcular</button>
+          </form>
+        </div>
+      </div>
+      <div class="calculo">
+        <!-- Calculo de IVA -->
+        <h2>Calculadora de impuestos total en base a monto y tasa de impuesto</h2>
+        <div class="valores">
+          <form action="" method="post">
+            <label for="dinero">Dinero:</label><input type="number" min="0.0000" id="dinero"
+              placeholder="Ingrese el monto(UYU)">
+              <label for="impuesto">IVA Actual 22%</label>
+              <label for="cantIva">Cantidad de IVA: <br><span id="cantIva">0.0 UYU</span></label>
+              <label for="costeTotal">Precio total con IVA:<br><span id="costeTotal">0.0 UYU</span></label>
+              <button type="button" id="calcularIva">Calcular</button>
           </form>
         </div>
       </div>
