@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Seccion del body*/
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.8);
+}
+
+header,
+footer {
+    font-size: 10.8px;
+    background-color: rgba(246, 246, 246, 0.559);
+    width: 100%;
+    height: 50px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.mainWrap {
+    min-height: 100vh;
+}
+
+.calculo {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculo img {
+    margin-top: 20px;
+    border: 3px solid black;
+    border-radius: 20px;
+}
+
+.valores {
+    margin-top: 20px;
+    background-color: rgba(57, 255, 159, 0.344);
+    padding: 60px;
+    border: 2px black solid;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+}
+
+.valores form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.valores label {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.valores input {
+    background-color: rgb(255, 248, 220);
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.valores button {
+    transition: 0.3s;
+    width: 120px;
+    height: 40px;
+    margin-left: 29px;
+    border-radius: 15px;
+    background-color: rgb(154, 254, 5);
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.valores button:hover {
+    transition: 0.3s;
+    background-color: rgba(147, 112, 216, 0.698);
+}
+
+/*Seccion del footer*/
+footer {
+    align-self: flex-end;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    margin-top: -20px;
+    border-top: 2px solid rgba(0, 0, 0, 0.8);
+}
+
+footer a {
+    transition: 0.2s;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+footer a:hover {
+    transition: 0.2s;
+    color: rgb(110, 114, 207);
+    text-decoration: none;
+}
+
+/*Media query*/
+
+@media only screen and (min-width: 600px) {
+    .calculo img {
+        width: 400px;
+    }
+}

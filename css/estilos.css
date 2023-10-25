@@ -1,0 +1,318 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #78A393;
+  color: #ededed;
+}
+
+/* diseño navbar */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 10%;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  background-color: #1B292C;
+  box-shadow: 1px 2px 15px black;
+}
+
+.logo {
+  font-size: 25px;
+  color: #ededed;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: default;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  right: -300px;
+
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  z-index: 1;
+}
+
+.navbar li {
+  list-style-type: none;
+}
+
+.navbar a {
+  font-size: 18px;
+  color: #ededed;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 35px;
+  transition: all 0.2s ease-out;
+}
+
+.navbar a:hover {
+  color: #257454;
+  transition: all 0.2s ease-in;
+}
+
+.hamburger {
+  position: relative;
+  width: 30px;
+  height: 4px;
+  background: #FFFFFF;
+  border-radius: 10px;
+  cursor: pointer;
+  z-index: 2;
+  transition: 0.3s;
+}
+
+.hamburger:before,
+.hamburger:after {
+  content: '';
+  position: absolute;
+  height: 4px;
+  right: 0;
+  background: #FFFFFF;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.hamburger:before {
+  top: -10px;
+  width: 20px;
+}
+
+.hamburger:after {
+  top: 10px;
+  width: 25px;
+}
+
+.navbar-menu {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  cursor: pointer;
+  transform: scale(1);
+  opacity: 0;
+}
+
+.hamburger,
+.navbar-menu {
+  display: none;
+}
+
+.navigation input:checked~.hamburger {
+  background: transparent;
+}
+
+.navigation input:checked~.navbar {
+  right: 0;
+}
+
+.navbar-menu:checked~.navigation {
+  transform: translateX(-300px);
+}
+
+@media screen and (max-width: 992px) {
+
+  .hamburger,
+  .navbar-menu {
+    display: block;
+  }
+
+  .navbar {
+    justify-content: start;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    background: #1B292C;
+    width: 300px;
+    height: 100%;
+    padding-top: 65px;
+  }
+
+  .navbar li {
+    width: 100%;
+    margin: 20px;
+  }
+
+  .navbar li a,
+  .navbar li a:hover {
+    padding: 30px;
+    font-size: 24px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0, 1) inset;
+  }
+}
+
+/* diseño seccion inicio */
+.home {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 0 10%;
+}
+
+.home-content {
+  max-width: 600px;
+}
+
+.home-content h1 {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.home-content h3 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #257454;
+}
+
+.home-content p {
+  font-size: 16px;
+}
+
+/* diseño seccion tareas */
+.tareas {
+  background-color: #1B292C;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
+  padding: 10px;
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 100%;
+  padding: 6rem 10%;
+}
+
+.tareas-content {
+  border: 1px 2px black;
+  padding: 1rem;
+  background-color: #78A393;
+  width: 200px;
+  height: 200px;
+  margin: 3px 0%;
+  margin-top: 20px;
+  text-align: center;
+  border: 3px solid #257454;
+  box-shadow: 2px 7px 15px black;
+  border-radius: 5%;
+}
+
+.tareas-heading {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.tareas h1 {
+  font-weight: 600;
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.tareas-content h3 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.tareas-content article {
+  border-radius: 2%;
+}
+
+.tareas a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.tareas a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* diseño seccion sobre mi */
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  gap: 2rem;
+  background: #78A393;
+  padding: 6rem 10%;
+
+}
+
+.about-content h3 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 40px;
+  color: #257454;
+}
+
+.heading {
+  font-size: 5rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.heading span {
+  color: #257454;
+}
+
+.about-img {
+  position: relative;
+  width: 25rem;
+  height: 25rem;
+  display: flex;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-img img {
+  width: 90%;
+  border-radius: 50%;
+  border: 5px solid #257454;
+}
+
+/* diseño seccion contacto */
+.contacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  background: #1B292C;
+  padding: 6rem 10%;
+}
+
+.contacto-content {
+  text-align: center;
+}
+
+.contacto-content span {
+  color: #257454;
+}
+
+.contacto-content p {
+  font-size: 25px;
+}

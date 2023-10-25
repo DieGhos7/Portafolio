@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/estilosTareas.css" type="text/css">
+  <title>Formulario 3</title>
+  <link rel="icon" type="image/x-icon" href="/images/fantasma.png">
+</head>
+
+<body>
+  <div id="PracForm">
+    <header id="headerPracForm">
+      <a href="PracticoForm2.html"><button type="button" class="btnVolver">Volver</button></a>
+      <a href="PracticoForm4.html"><button type="button" class="btnSiguiente">Siguiente</button></a>
+    </header>
+    <div id="boxNavPracForm">
+      <nav id="navPracForm">
+        <h1 class="tituloPracForm">Practico 3</h1>
+        <form>
+          <p class="tituloPracForm">Formulario de registro</p>
+          <fieldset>
+            <legend> Datos Personales</legend>
+            <label for="nombre">Nombre Completo: </label> <input type="text" id="nombre" name="nombre" value="">
+            <br><br>
+            <label for="tel">Teléfono: </label> <input type="text" id="tel" name="tel" value="">
+            <br><br>
+            <label for="correo">Correo Electronico: </label> <input type="text" id="correo" name="correo" value="">
+            <br><br>
+            <label for="pais">País: </label>
+            <select id="pais" name="pais">
+              <option value="uruguay"> Uruguay</option>
+              <option value="argentina"> Argentina</option>
+              <option value="brasil"> Brasil</option>
+              <option value="chile"> Chile</option>
+              <option value="paraguay"> Paraguay</option>
+            </select>
+            <br> <br>
+          </fieldset>
+          <br>
+          <fieldset>
+            <legend>Intereses</legend>
+            <input id="deporte" name="interes" type="checkbox" value="deporte"><label for="deporte">Deportes</label><br>
+            <input id="musica" name="interes" type="checkbox" value="musica"><label for="musica">Música</label><br>
+          </fieldset>
+        </form>
+      </nav>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Concesionario</title>
+  <link rel="stylesheet" href="/css/estilosTareas.css">
+  <link rel="icon" type="image/x-icon" href="/images/fantasma.png">
+</head>
+
+<body>
+  <div id="fondoFormRegVehi">
+    <div id="barraSupFormRegVehi">
+      <a href="https://pagina-principal--diegoromero35.repl.co/#tareas" id="volvBarraSupFormRegVehi"><button
+          type="button" id="btnVolverFormRegVehi">Volver</button></a>
+      <h1 id="tituloRegVehi">Registro de vehiculos</h1>
+    </div>
+    <div class="boxFormRegVehi">
+      <form>
+        <fieldset class="fieldsetFormRegVehi">
+          <legend class="legFormRegVehi">Datos del Usuario</legend>
+          <label for="nombre" class="lblFormRegVehi">Nombre del titular: </label> <input class="inpFormRegVehi"
+            type="text" id="nombre" name="nombre" value="" maxlength="30">
+          <br><br>
+
+          <label for="apellido" class="lblFormRegVehi">Apellido del titular: </label> <input class="inpFormRegVehi"
+            type="text" id="apellido" name="apellido" value="" maxlength="30">
+          <br><br>
+          <label for="numero" class="lblFormRegVehi">Tel.Contacto: </label> <input class="inpFormRegVehi" type="number"
+            id="numero" name="numero" value="" maxlength="9" onKeyPress="if(this.value.length==9) return false;">
+          <br><br>
+        </fieldset>
+        <br><br>
+        <fieldset class="fieldsetFormRegVehi">
+          <legend class="legFormRegVehi">Datos del Vehiculo</legend>
+          <label for="marca" class="lblFormRegVehi">Marca: </label> <input class="inpFormRegVehi" type="text" id="marca"
+            name="marca" value="" maxlength="12">
+          <br><br>
+          <label for="modelo" class="lblFormRegVehi">Modelo: </label> <input class="inpFormRegVehi" type="text"
+            id="modelo" name="modelo" value="" maxlength="12">
+          <br><br>
+          <label for="año" class="lblFormRegVehi">Año: </label> <input class="inpFormRegVehi" type="number" id="año"
+            name="año" value="" maxlength="4" onKeyPress="if(this.value.length==4) return false;">
+          <br><br>
+          <label for="color" class="lblFormRegVehi">Color: </label>
+          <select id="color" name="color">
+            <option value="rojo"> Rojo</option>
+            <option value="azul"> Azul</option>
+            <option value="negro"> Negro</option>
+            <option value="blanco"> Blanco</option>
+            <option value="gris"> Gris</option>
+          </select>
+          <br><br>
+          <label for="matricula" class="lblFormRegVehi">Matricula</label> <input class="inpFormRegVehi" type="text"
+            id="matricula" name="matricula" value="" pattern="[A-Z]{3}[0-9]{4}" required>
+          <br><br>
+          <label for="ciudad" class="lblFormRegVehi">Ciudad: </label>
+          <select id="ciudad" name="ciudad">
+            <option value="pasoMolino"> Paso Molino</option>
+            <option value="pajasBlancas"> Pajas Blancas</option>
+            <option value="cerro"> Cerro</option>
+            <option value="pocitos"> Pocitos</option>
+            <option value="puntaDelEste"> Punta del este</option>
+          </select>
+          <br><br>
+          <label for="FechaDeEmpadronamiento" class="lblFormRegVehi">Fecha de empadronamiento: </label> <input
+            class="inpFormRegVehi" type="date" id="fecha" name="fecha" value="">
+          <br><br>
+        </fieldset>
+        <br><br>
+        <button class="btnFormRegVehi" type="submit"> Enviar </button> <button class="btnFormRegVehi"
+          type="reset">Borrar</button>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>
