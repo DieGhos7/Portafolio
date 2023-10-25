@@ -74,6 +74,14 @@ footer {
     gap: 20px;
 }
 
+#formEdad {
+    align-items: center;
+}
+
+#caja2 {
+    font-size: 20px;
+}
+
 .valores label {
     font-weight: 700;
     font-size: 20px;

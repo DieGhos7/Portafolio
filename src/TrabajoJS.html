@@ -40,11 +40,27 @@
           <form action="" method="post">
             <label for="dinero">Dinero:</label><input type="number" min="0.0000" id="dinero"
               placeholder="Ingrese el monto(UYU)">
-              <label for="impuesto">IVA Actual 22%</label>
-              <label for="cantIva">Cantidad de IVA: <br><span id="cantIva">0.0 UYU</span></label>
-              <label for="costeTotal">Precio total con IVA:<br><span id="costeTotal">0.0 UYU</span></label>
-              <button type="button" id="calcularIva">Calcular</button>
+            <label for="impuesto">IVA Actual 22%</label>
+            <label for="cantIva">Cantidad de IVA: <br><span id="cantIva">0.0 UYU</span></label>
+            <label for="costeTotal">Precio total con IVA:<br><span id="costeTotal">0.0 UYU</span></label>
+            <button type="button" id="calcularIva">Calcular</button>
           </form>
+        </div>
+      </div>
+      <div class="calculo">
+        <!-- Info segun tu edad -->
+        <h2>Obtenga info. según la etapa de la edad ingresada</h2>
+        <div class="valores">
+          <form id="formEdad">
+            <label for="edad">Indique una edad: </label>
+            <input type="text" id="edad" name="edad" value="">
+            <input type="submit" class="btn" value="Registrar">
+            <div id="caja2">
+              <span id="edadPuesta">
+              </span>
+          </div> 
+        </form>
+        </div>  
         </div>
       </div>
     </div>
