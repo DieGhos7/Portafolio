@@ -4,6 +4,16 @@
     box-sizing: border-box;
 }
 
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btnVolver a {
+    text-decoration: none;
+}
+
 /*Seccion del body*/
 body {
     background-size: cover;
