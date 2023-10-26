@@ -10,6 +10,10 @@ header {
     justify-content: space-between;
 }
 
+.btnVolver {
+    margin-right: 10em;
+}
+
 .btnVolver a {
     text-decoration: none;
 }
@@ -80,6 +84,12 @@ footer {
 
 #caja2 {
     font-size: 20px;
+}
+
+form img {
+    width: 10em;
+    height: auto;
+    background-color: aliceblue;
 }
 
 .valores label {
