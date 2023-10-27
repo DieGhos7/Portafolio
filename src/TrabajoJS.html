@@ -26,8 +26,7 @@
           <form action="" method="post">
             <label for="distancia">Distancia:</label><input type="number" id="distancia"
               placeholder="Ingrese la distancia (m)" />
-            <label for="tiempo">Tiempo:</label><input type="number" id="tiempo"
-              placeholder="Ingrese el tiempo (Min)" />
+            <label for="tiempo">Tiempo:</label><input type="number" id="tiempo" placeholder="Ingrese el tiempo (Min)" />
             <label for="velocidad">Velocidad: <span id="velocidad">0,0 m/min</span></label>
             <button type="button" id="calcular">Calcular</button>
           </form>
@@ -38,9 +37,9 @@
         <h2>Calculadora de impuestos total en base a monto y tasa de impuesto</h2>
         <div class="valores">
           <form action="" method="post">
-            <label for="dinero">Dinero:</label><input type="number" id="dinero"
-              placeholder="Ingrese el monto(UYU)">
-            <label for="impuesto">IVA%:</label><input type="number" id="porcentajeIva" placeholder="Ingrese el porcentaje de IVA">
+            <label for="dinero">Dinero:</label><input type="number" id="dinero" placeholder="Ingrese el monto(UYU)">
+            <label for="impuesto">IVA%:</label><input type="number" id="porcentajeIva"
+              placeholder="Ingrese el porcentaje de IVA">
             <label for="cantIva">Cantidad de IVA: <br><span id="cantIva">0.0 UYU</span></label>
             <label for="costeTotal">Precio total con IVA:<br><span id="costeTotal">0.0 UYU</span></label>
             <button type="button" id="calcularIva">Calcular</button>
@@ -52,24 +51,24 @@
         <h2>Etapas de la vida</h2>
         <div class="valores">
           <form id="formEdad">
+            <div id="caja2">
+              <span class="texto" id="edadPuesta">
+              </span>
+            </div>
             <img id="imagenEdad" src="../images/Escrito js/vida.png" alt="Imagen de edad" width="10em" height="auto">
             <label for="edad">Indique una edad: </label>
             <input type="text" id="edad" name="edad" value="" placeholder="0">
-            <input type="submit" class="btn" value="Registrar">
-            <div id="caja2">
-              <span id="edadPuesta">
-              </span>
-          </div> 
-        </form>
-        </div>  
+            <button type="submit" class="btn" id="registrarBtn">Registrar</button>
+          </form>
         </div>
       </div>
+    </div>
     </div>
   </main>
   <footer>
     <h1><a href="https://www.google.com" target="_blank">Ir a Google</a></h1>
   </footer>
-  <script src="../scriptEscrito.js"></script>
+  <script src="../javascript/scriptEscrito.js"></script>
 </body>
 
 </html>

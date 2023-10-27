@@ -46,7 +46,7 @@ calcularBotonIva.addEventListener("click", function () {
     }
 });
 
-//Funcion para obtener informacion dada la edad
+//Funcion para etapa de la vida dada la edad.
 document.getElementById("formEdad").addEventListener("submit", function(event) {
     event.preventDefault();
 
@@ -66,10 +66,10 @@ document.getElementById("formEdad").addEventListener("submit", function(event) {
         document.getElementById("edadPuesta").textContent = "Eres un adolescente.";
         imagen.src = "../images/Escrito js/adolescente.png";
     } else if (edad >= 18 && edad <= 59) {
-        document.getElementById("edadPuesta").textContent = "Eres adulto.";
+        document.getElementById("edadPuesta").textContent = "Eres un adulto.";
         imagen.src = "../images/Escrito js/adulto.png";
     } else if (edad >= 60) {
-        document.getElementById("edadPuesta").textContent = "Eres anciano.";
+        document.getElementById("edadPuesta").textContent = "Eres un anciano.";
         imagen.src = "../images/Escrito js/anciano.png";
     }
 });

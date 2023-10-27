@@ -120,6 +120,16 @@ form img {
     background-color: rgba(147, 112, 216, 0.698);
 }
 
+#registrarBtn {
+    margin-right: 2em;
+}
+
+.texto {
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
 /*Seccion del footer*/
 footer {
     align-self: flex-end;
